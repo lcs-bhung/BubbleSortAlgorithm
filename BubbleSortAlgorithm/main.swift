@@ -33,20 +33,21 @@ print(dataSet)
 waitForInput()
 
 var unsorted = dataSet.count - 1
+//Make a boolean value swap
+var swap = false
 
 //Sort the array
-
-var swap = false
 
 //loop thriugh the entire array "n times
 for i in 0..<dataSet.count {
     // pass through the array to float the highest number to the end
     for j in 0..<unsorted {
         
+        
         swap = false
 
         //What comparison is this
-        print("pass \(i + 1), comparison \(j + 1)...")
+//        print("pass \(i + 1), comparison \(j + 1)...")r
         
         //compare left value to rught value
         if dataSet[j] > dataSet[j+1] {
@@ -60,6 +61,7 @@ for i in 0..<dataSet.count {
        
     }
 
+    //If the code does not swap any numbers the array is sorted
     if swap == false {
         break
     }
@@ -74,6 +76,7 @@ for i in 0..<dataSet.count {
 
     
     }
+
     
 
 
