@@ -30,5 +30,32 @@ var end = dataSet.count
 //make the target
 var target = dataSet[Int.random(in: 0...dataSet.count - 1)]
 
-//get the middle number in the array
-for i in 
+print ("Target:")
+print (target)
+
+
+//loop n times
+for _ in 0...end {
+    
+    //get the middle number    MIDPOINT is wront
+    var midPoint = (end + start) / 2
+   print ("mid point:")
+    print (midPoint)
+    
+    if dataSet[midPoint] == target {
+        let result = dataSet[midPoint]
+        break
+    } else if dataSet[midPoint] < target {
+        start = midPoint + 1
+        print ("new start: \(start)")
+    } else if dataSet[midPoint] > target {
+        end = midPoint - 1
+        print ("new end: \(end)")
+    } else if end == start {
+        break
+    }
+    
+   
+}
+//print (dataSet[midPoint])
+
