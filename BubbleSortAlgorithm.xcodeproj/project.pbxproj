@@ -7,10 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57119621260A1D1D00FF4783 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57119620260A1D1D00FF4783 /* main.swift */; };
+		57119628260A1D7700FF4783 /* SharedFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57119627260A1D7700FF4783 /* SharedFunctions.swift */; };
+		5711962B260A1DD600FF4783 /* SharedFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57119627260A1D7700FF4783 /* SharedFunctions.swift */; };
 		57FA362926051FDC00856E89 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FA362826051FDC00856E89 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		5711961C260A1D1D00FF4783 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		57FA362326051FDC00856E89 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -23,11 +35,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5711961E260A1D1D00FF4783 /* BinarySearchAlgorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BinarySearchAlgorithm; sourceTree = BUILT_PRODUCTS_DIR; };
+		57119620260A1D1D00FF4783 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		57119627260A1D7700FF4783 /* SharedFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedFunctions.swift; sourceTree = "<group>"; };
 		57FA362526051FDC00856E89 /* BubbleSortAlgorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BubbleSortAlgorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		57FA362826051FDC00856E89 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5711961B260A1D1D00FF4783 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		57FA362226051FDC00856E89 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -38,10 +60,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5711961F260A1D1D00FF4783 /* BinarySearchAlgorithm */ = {
+			isa = PBXGroup;
+			children = (
+				57119620260A1D1D00FF4783 /* main.swift */,
+			);
+			path = BinarySearchAlgorithm;
+			sourceTree = "<group>";
+		};
 		57FA361C26051FDC00856E89 = {
 			isa = PBXGroup;
 			children = (
+				57119627260A1D7700FF4783 /* SharedFunctions.swift */,
 				57FA362726051FDC00856E89 /* BubbleSortAlgorithm */,
+				5711961F260A1D1D00FF4783 /* BinarySearchAlgorithm */,
 				57FA362626051FDC00856E89 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				57FA362526051FDC00856E89 /* BubbleSortAlgorithm */,
+				5711961E260A1D1D00FF4783 /* BinarySearchAlgorithm */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +98,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5711961D260A1D1D00FF4783 /* BinarySearchAlgorithm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57119624260A1D1D00FF4783 /* Build configuration list for PBXNativeTarget "BinarySearchAlgorithm" */;
+			buildPhases = (
+				5711961A260A1D1D00FF4783 /* Sources */,
+				5711961B260A1D1D00FF4783 /* Frameworks */,
+				5711961C260A1D1D00FF4783 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BinarySearchAlgorithm;
+			productName = BinarySearchAlgorithm;
+			productReference = 5711961E260A1D1D00FF4783 /* BinarySearchAlgorithm */;
+			productType = "com.apple.product-type.tool";
+		};
 		57FA362426051FDC00856E89 /* BubbleSortAlgorithm */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 57FA362C26051FDC00856E89 /* Build configuration list for PBXNativeTarget "BubbleSortAlgorithm" */;
@@ -91,6 +141,9 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					5711961D260A1D1D00FF4783 = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					57FA362426051FDC00856E89 = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -110,15 +163,26 @@
 			projectRoot = "";
 			targets = (
 				57FA362426051FDC00856E89 /* BubbleSortAlgorithm */,
+				5711961D260A1D1D00FF4783 /* BinarySearchAlgorithm */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5711961A260A1D1D00FF4783 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5711962B260A1DD600FF4783 /* SharedFunctions.swift in Sources */,
+				57119621260A1D1D00FF4783 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		57FA362126051FDC00856E89 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57119628260A1D7700FF4783 /* SharedFunctions.swift in Sources */,
 				57FA362926051FDC00856E89 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -126,6 +190,28 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		57119622260A1D1D00FF4783 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QP225TF54Z;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		57119623260A1D1D00FF4783 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QP225TF54Z;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		57FA362A26051FDC00856E89 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -266,6 +352,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		57119624260A1D1D00FF4783 /* Build configuration list for PBXNativeTarget "BinarySearchAlgorithm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57119622260A1D1D00FF4783 /* Debug */,
+				57119623260A1D1D00FF4783 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		57FA362026051FDC00856E89 /* Build configuration list for PBXProject "BubbleSortAlgorithm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

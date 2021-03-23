@@ -9,11 +9,7 @@ import Foundation
 
 print("Hello, World!")
 
-// Function to pause to allow the user to see output
-func waitForInput() {
-    print("Press RETURN")
-    _ = readLine()
-}
+
 
 //Make an array
 
